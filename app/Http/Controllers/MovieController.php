@@ -14,4 +14,13 @@ class MovieController extends Controller
         
         return view('home', compact('movies'));
     }
+
+    public function show($id) {
+        //SELECT * FROM movie WHERE id = $id
+
+        $movie = Movie::where('id', $id)->first();
+        // $movie = Book::find($id);
+
+        return view('show', compact('movie'));
+    }
 }

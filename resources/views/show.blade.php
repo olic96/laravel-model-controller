@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="{{route('home')}}">Indietro</a>
     <h1>{{$movie->title}}</h1>
     <h3>{{$movie->original_title}}</h3>
     <h3>{{$movie->nationality}}</h3>

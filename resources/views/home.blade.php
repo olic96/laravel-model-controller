@@ -10,7 +10,7 @@
     <h1>Movies</h1>
     <ul>
         @foreach ($movies as $movie)
-        <li>{{$movie->title}}</li>
+        <li><a href="{{route('show', $movie->id)}}">{{$movie->title}}</a></li>
         @endforeach
     </ul>
 </body>
